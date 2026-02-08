@@ -1,130 +1,130 @@
-📊 Customer Churn Analysis – Power BI Dashboard
+# 📊 Customer Churn Analysis using Power BI
 
-This project focuses on analyzing customer churn behavior using a telecom customer dataset and visualizing key insights through interactive Power BI dashboards. The goal is to identify churn patterns, risk factors, and service-level impacts to support data-driven decision-making.
+An end-to-end **Customer Churn Analysis** project built using a telecom dataset and visualized through **interactive Power BI dashboards**.  
+This project helps identify **churn patterns, customer risk factors, and service-level impacts** to support data-driven business decisions.
 
-🔍 Project Overview
+---
 
-Customer churn is a critical business problem where customers stop using a company’s services. In this project, I analyzed customer demographics, services, contracts, and payment behavior to understand:
+## 🔍 Project Overview
 
-Why customers churn
+Customer churn is a major challenge for subscription-based businesses. This project analyzes customer behavior across demographics, services, contracts, and payment methods to answer key business questions such as:
 
-Which customer segments are at higher risk
+- Why do customers churn?
+- Which customer segments are at higher risk?
+- How do services and contract types influence churn?
 
-How services and contract types affect churn
+The insights are delivered through **three dynamic Power BI dashboards** for better decision-making.
 
-The analysis is presented using three interactive Power BI dashboards.
+---
 
-📁 Files in This Repository
+## 📁 Repository Structure
 
-Customer-Churn-Dataset.xlsx
-Raw dataset containing customer details, service usage, charges, tickets, and churn status.
+| File | Description |
+|-----|------------|
+| `Customer-Churn-Dataset.xlsx` | Telecom customer dataset with churn details |
+| `Customer Churn Analysis.pbix` | Power BI report with dashboards, data model & DAX |
 
-Customer Churn Analysis.pbix
-Power BI file containing all dashboards, data model, and DAX measures.
+---
 
-🧾 Dataset Description
+## 🧾 Dataset Description
 
-The dataset includes the following key attributes:
+The dataset contains customer-level information including:
 
-Customer Info: customerID, gender, SeniorCitizen, Partner, Dependents
+### 👤 Customer Information
+- `customerID`
+- `gender`
+- `SeniorCitizen`
+- `Partner`
+- `Dependents`
 
-Account Details: tenure, Contract, PaperlessBilling, PaymentMethod
+### 📄 Account Details
+- `tenure`
+- `Contract`
+- `PaperlessBilling`
+- `PaymentMethod`
 
-Services: PhoneService, MultipleLines, InternetService, StreamingTV, StreamingMovies
+### 📡 Services
+- `PhoneService`
+- `MultipleLines`
+- `InternetService`
+- `StreamingTV`
+- `StreamingMovies`
 
-Security & Support: OnlineSecurity, OnlineBackup, TechSupport, DeviceProtection
+### 🔐 Security & Support
+- `OnlineSecurity`
+- `OnlineBackup`
+- `TechSupport`
+- `DeviceProtection`
 
-Charges: MonthlyCharges, TotalCharges
+### 💰 Charges & Tickets
+- `MonthlyCharges`
+- `TotalCharges`
+- `numAdminTickets`
+- `numTechTickets`
 
-Tickets: numAdminTickets, numTechTickets
+### 🎯 Target Variable
+- `Churn` (Yes / No)
 
-Target Variable: Churn (Yes / No)
+---
 
-📊 Dashboards Included
-1️⃣ Customer Churn Dashboard
+## 📊 Dashboards Overview
 
-Provides an overall churn analysis with:
+### 1️⃣ Customer Churn Dashboard
+Provides a high-level churn analysis including:
+- Total churned customers
+- Monthly & yearly revenue impact
+- Churn distribution by tenure and gender
+- Contract type & payment method influence
+- Average monthly and total charges
 
-Total churned customers
+**📌 Insight:**  
+Customers with **month-to-month contracts** and **electronic check payments** show the highest churn.
 
-Monthly & yearly charges
+---
 
-Churn by tenure
+### 2️⃣ Customer Risk Dashboard
+Focuses on identifying customers with high churn probability:
+- Churn rate by internet service type
+- Monthly charges vs churn rate
+- Admin & tech ticket comparison
+- Contract duration impact
 
-Churn by gender
+**📌 Insight:**  
+Customers using **fiber optic internet**, having **high monthly charges**, and raising **frequent tech tickets** are more likely to churn.
 
-Contract type and payment method impact
+---
 
-Average monthly and total charges
-
-📌 Key Insight:
-Customers with month-to-month contracts and electronic check payments show the highest churn.
-
-2️⃣ Customer Risk Dashboard
-
-Focuses on identifying high-risk churn customers:
-
-Churn rate by internet service type
-
-Monthly charges vs churn rate
-
-Admin & tech tickets comparison
-
-Contract duration impact on churn
-
-📌 Key Insight:
-Customers using fiber optic internet with high monthly charges and frequent tech tickets are more likely to churn.
-
-3️⃣ Services Dashboard
-
+### 3️⃣ Services Dashboard
 Analyzes churn based on service usage:
+- Internet service type
+- Streaming TV & movies
+- Phone service & multiple lines
+- Online security, backup, tech support, and device protection
 
-Internet service type
+**📌 Insight:**  
+Customers **without support and security services** show significantly higher churn rates.
 
-Streaming TV & movies
+---
 
-Phone service & multiple lines
+## 🛠 Tools & Technologies
 
-Online security, backup, tech support, and device protection
+- **Power BI Desktop** – Data modeling & visualization  
+- **DAX** – Measures, KPIs & calculations  
+- **Microsoft Excel** – Data storage & preprocessing  
 
-📌 Key Insight:
-Customers without security, backup, or tech support services have higher churn rates.
+---
 
-🛠 Tools & Technologies Used
+## 🎯 Key Business Insights
 
-Power BI Desktop – Data modeling & visualization
+✔ Month-to-month contracts drive maximum churn  
+✔ High monthly charges increase churn probability  
+✔ Absence of support services raises churn risk  
+✔ Long-term contracts (1-year, 2-year) reduce churn significantly  
 
-DAX – Calculated measures and KPIs
+---
 
-Excel – Dataset storage and preprocessing
+## 🚀 How to Run the Project
 
-🎯 Key Business Insights
-
-Month-to-month contracts drive maximum churn
-
-High monthly charges increase churn probability
-
-Lack of support services (Tech Support, Online Security) increases churn
-
-Long-term contracts (1-year, 2-year) significantly reduce churn
-
-🚀 How to Use This Project
-
-Clone the repository:
-
-git clone https://github.com/kavi11662/Customer-Churn-Analysis.git
-
-
-Open Customer Churn Analysis.pbix in Power BI Desktop
-
-Interact with filters and slicers to explore insights
-
-📌 Conclusion
-
-This project demonstrates how customer churn can be analyzed effectively using Power BI. The dashboards help businesses identify churn drivers, evaluate customer risk, and improve retention strategies through data-driven insights.
-
-👤 Author
-
-Kavi
-Power BI | Data Analytics
-GitHub: https://github.com/kavi11662
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/kavi11662/Customer-Churn-Analysis.git
